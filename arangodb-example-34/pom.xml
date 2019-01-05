@@ -15,8 +15,9 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.4.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<!-- MUST BE THIS VERSION WITH ARANGODB 1.0.0 BELOW NOT 2.1.0.RELEASE!!!!!! -->
+		<!-- Spent too much time figuring this out -->
+		<version>2.1.1.RELEASE</version>
 	</parent>
 
 	<properties>
@@ -45,16 +46,13 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!-- <dependency>
-			<groupId>com.arangodb</groupId>
-			<artifactId>arangodb-spring-data</artifactId>
-			<version>3.2.1</version>
-		</dependency> -->
-		
+		<!-- <dependency> <groupId>com.arangodb</groupId> <artifactId>arangodb-spring-data</artifactId> 
+			<version>3.2.1</version> </dependency> -->
+
 		<dependency>
 			<groupId>com.arangodb</groupId>
 			<artifactId>arangodb-spring-boot-starter</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1</version>
 		</dependency>
 
 		<dependency>

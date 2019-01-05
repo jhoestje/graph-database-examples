@@ -1,0 +1,7 @@
+spring:
+  data:
+    arangodb:
+      database: artifactDemo
+      user: root
+      password: secret
+      hosts: localhost:8529
