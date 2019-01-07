@@ -12,4 +12,8 @@ public class Version {
 	@Id
 	private String id;
 	private String value;
+	
+	public static String getVertexName() {
+		return "versions";
+	}
 }

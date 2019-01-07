@@ -25,8 +25,8 @@ public class VersionOf {
 		this.artifactId = to;
 	}
 
-	// @Override
-	// public String getEdgeName() {
-	// return "versionOf";
-	// }
+	public static String getEdgeName() {
+		return "versionOf";
+	}
+
 }

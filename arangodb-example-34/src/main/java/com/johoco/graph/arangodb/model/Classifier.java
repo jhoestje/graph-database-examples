@@ -12,4 +12,8 @@ public class Classifier {
 	@Id
 	private String id;
 	private String value;
+
+	public static String getVertexName() {
+		return "classifiers";
+	}
 }

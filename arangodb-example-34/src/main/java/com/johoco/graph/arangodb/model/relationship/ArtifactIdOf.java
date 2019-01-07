@@ -28,4 +28,8 @@ public class ArtifactIdOf {
 		this.groupId = to;
 	}
 
+	public static String getEdgeName() {
+		return "artifactIdOf";
+	}
+
 }

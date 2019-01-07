@@ -25,4 +25,8 @@ public class ArtifactId {
 	private String value;
 	@Relations(edges = ArtifactIdOf.class, lazy = true)
 	private GroupId groupId;
+	
+	public static String getVertexName() {
+		return "artifactIds";
+	}
 }

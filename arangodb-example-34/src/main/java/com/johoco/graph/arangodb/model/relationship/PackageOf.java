@@ -26,9 +26,8 @@ public class PackageOf {
 		this.groupId = to;
 	}
 
-//	@Override
-//	public String getEdgeName() {
-//		return "packageOf";
-//	}
+	public static String getEdgeName() {
+		return "packageOf";
+	}
 
 }
