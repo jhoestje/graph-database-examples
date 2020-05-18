@@ -21,7 +21,7 @@ import com.johoco.graph.arangodb.model.GroupId;
 import com.johoco.graph.arangodb.model.Packaging;
 import com.johoco.graph.arangodb.model.Version;
 import com.johoco.graph.arangodb.model.relationship.ArtifactIdOf;
-import com.johoco.graph.arangodb.model.relationship.PackageOf;
+import com.johoco.graph.arangodb.model.relationship.PackagingOf;
 import com.johoco.graph.arangodb.model.relationship.VersionOf;
 
 @Configuration
@@ -103,8 +103,8 @@ public class RepoConfiguration { // implements ArangoConfiguration {
 			graph.addEdgeDefinition(versionOfDef);
 		}
 
-		if (!existingEdgeDefs.contains(PackageOf.getEdgeName())) {
-			final EdgeDefinition packageOfDef = new EdgeDefinition().collection(PackageOf.getEdgeName())
+		if (!existingEdgeDefs.contains(PackagingOf.getEdgeName())) {
+			final EdgeDefinition packageOfDef = new EdgeDefinition().collection(PackagingOf.getEdgeName())
 					.from(Packaging.getVertexName()).to(Version.getVertexName());
 			graph.addEdgeDefinition(packageOfDef);
 		}

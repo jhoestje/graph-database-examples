@@ -6,8 +6,12 @@ import com.arangodb.springframework.annotation.Edge;
 import com.arangodb.springframework.annotation.From;
 import com.arangodb.springframework.annotation.To;
 import com.johoco.graph.arangodb.model.ArtifactId;
+import com.johoco.graph.arangodb.model.GroupId;
 import com.johoco.graph.arangodb.model.Version;
 
+import lombok.Data;
+
+@Data
 @Edge("versionOf")
 public class VersionOf {
 

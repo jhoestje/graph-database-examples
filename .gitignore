@@ -1,2 +1,5 @@
 /.metadata/
 RemoteSystemsTempFiles/.project
+*.class
+.project
+.classpath
