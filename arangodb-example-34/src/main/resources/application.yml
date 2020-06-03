@@ -3,5 +3,5 @@ spring:
     arangodb:
       database: artifactDemo
       user: root
-      password: secret
+      password: rootpassword
       hosts: localhost:8529
